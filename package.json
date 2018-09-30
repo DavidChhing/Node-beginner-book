@@ -4,7 +4,10 @@
   "description": "Assignment for Alchemy full stack class",
   "main": "helloworld.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/DavidChhing/Node-beginner-book/issues"
   },
-  "homepage": "https://github.com/DavidChhing/Node-beginner-book#readme"
+  "homepage": "https://github.com/DavidChhing/Node-beginner-book#readme",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "jest": "^23.6.0"
+  }
 }
